@@ -25,60 +25,124 @@
             <div class="container">
                 <div class="header-container">
                     <nav class="header-nav">
-                        <a href="./index.html" class="header-logo">CHEESE STORE</span></a>
+                        <a href="./index.html" class="header-logo">
+                            CHEESE STORE
+                        </a>
                         <ul class="header-ul">
-                            <li><a class="header-item" href="./aboutus.html">Про нас</a></li>
-                            <li><a class="header-item" href="./allproducts.html">Всі вироби</a></li>
-                            <li><a class="header-item active" href="./feedback.html">Відгуки</a></li>
-                            <li><a class="header-item" href="./stories.html">Історія сирів</a></li>
-                            <li><a class="header-item" href="./contacts.html">Контакти</a>
+                            <li><a class="header-item link " href="./allproducts.html">Наші вироби</a></li>
+                            <li><a class="header-item link" href="./aboutus.html">Про нас</a></li>
+                            <li><a class="header-item active link" href="./feedback.html">Відгуки</a></li>
+                            <li><a class="header-item link" href="./stories.html">Історія сирів</a></li>
+                            <li><a class="header-item link" href="./contacts.html">Контакти</a>
                         </ul>
-                        <address>
-                            <ul class="address">
-                                <li class="address-item"> <a class="address-mail"
-                                        href="mailto:info@gmail.com">info@gmail.com</a>
-                                </li>
-                                <li class="address-item"> <a class="address-tel" href="tel:+380971111111">+38
-                                        (097) 111-11-11</a>
-                                </li>
-                            </ul>
-                        </address>
                     </nav>
+                    <address>
+                        <ul class="address">
+                            <li class="address-item"> <a class="address-mail"
+                                    href="mailto:info@gmail.com">info@gmail.com</a>
+                            </li>
+                            <li class="address-item"> <a class="address-tel" href="tel:+380971111111">+38
+                                    (097) 111-11-11</a>
+                            </li>
+                        </ul>
+                    </address>
+
                 </div>
             </div>
         </header>
         <main>
-            <section class="feedback">
-                <div class="feedb-bg global-container">
+            <section class="container global-container">
+                <div class="feedback">
                     <div class="feedback-sec">
+                        <ul class="feedb-list list">
+                            <li class="feedb-item list">
+                                <h2 class="feedb-subtitle">Анастасія</h2>
+                                <p class="feedb-desc">Івано-Франківськ</p>
+                                <p class="feedb-desc">01/01/2023</p>
+                                <p class="feedb-message">
+                                    Найкращі сири України! Сам їм кожен день і вам раджу! Замовляйте,
+                                    смакуйте, не пожалієте!
+                                </p>
+                            </li>
 
-                        <p class="feedback-desc">
-                            Найкращі сири України! Сам їм кожен день і вам раджу! Замовляйте,
-                            смакуйте, не пожалієте!
+                            <li class="feedb-item list">
+                                <h2 class="feedb-subtitle">Костянтин</h2>
+                                <p class="feedb-desc">Київ</p>
+                                <p class="feedb-desc">01/01/2023</p>
+                                <p class="feedb-message">
+                                    Найкращі сири України! Сам їм кожен день і вам раджу! Замовляйте,
+                                    смакуйте, не пожалієте!
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="form-title">Залишити відгук</p>
+                        <form action="#" class="modal-form form">
+                            <div class="form-input">
+                                <label class="form-label">
+
+                                    <span class="form-span">
+                                        <input type="text" name="user" required class="form-item"
+                                            placeholder="Ваше ім'я" />
+                                        <svg class="icon-form" width="18px" height="18px">
+                                            <use href="./images/icons.svg#icon-user"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-input">
+                                <label class="form-label">
+                                    <span class="form-span">
+                                        <input type="text" name="city" required class="form-item"
+                                            placeholder="Ваше місто" />
+                                        <svg class="icon-form" width="18" height="24">
+                                            <use href="./images/icons.svg#icon-phone"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                            </div>
 
 
-                        </p>
+                            <div class="form-input-cb">
+                                <label class="form-label">
+
+                                    <textarea name="comment" class="form-item-area"
+                                        placeholder="Залиште Ваш відгук. Дякуємо!"></textarea>
+                                </label>
+                            </div>
+
+                            <div class="form-input">
+                                <label class="form-checkbox" for="privacy">
+                                    <input type="checkbox" class="form-privacy visually-hidden" required name="privacy"
+                                        id="privacy" />
+                                    Я погоджуюсь з публікацією відгуку</label>
+                            </div>
+                            <button type="submit" class="send-button">Відправити</button>
+
+                        </form>
                     </div>
                 </div>
             </section>
         </main>
 
-
-
         <footer class="footer">
             <div class="footer-container container">
                 <div class="footer-main">
-                    <a href="./index.html" class="footer-logo">CHEESE <span>STORE</span></a>
+                    <a href="./index.html" class="footer-logo">CHEESE STORE<img src="./images/ua-flag.png"
+                            class="ua-icon" alt="ua-flag" width="25">
+                    </a>
+
                     <p class="footer-desc">Best cheese of Ukraine!</p>
+                    <p class="footer-desc">All rights reserved. &#169;</p>
                 </div>
 
-                <!-- <img src=" ./images/foot-ch.png" alt="Fresh Coffee"> -->
 
                 <div class="store-social-links">
+                    <p class="social-desc">Ми в соцмережах:</p>
                     <ul class="store-social-list list">
                         <li class="store-social-item">
-                            <a class="store-social-link" href="">
-                                <svg class="store-insta-icon" width="30">
+                            <a class="store-social-link" href="#">
+                                <svg class="social-icon" width="30" height="30">
                                     <use href="../images/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
@@ -87,35 +151,35 @@
 
                         <li class="store-social-item">
                             <a class="store-social-link" href="">
-                                <svg class="store-twitter-icon" width="30">
+                                <svg class="social-icon" width="30" height="30">
                                     <use href="../images/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="store-social-item">
                             <a class="store-social-link" href="">
-                                <svg class="store-facebook2-icon" width="30">
+                                <svg class="social-icon" width="30" height="30">
                                     <use href="../images/symbol-defs.svg#icon-facebook2"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="store-social-item">
                             <a class="store-social-link" href="">
-                                <svg class="store-telegram-icon" width="30">
+                                <svg class="social-icon" width="30" height="30">
                                     <use href="../images/symbol-defs.svg#icon-telegram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="store-social-item">
                             <a class="store-social-link" href="">
-                                <svg class="store-viber-icon" width="33">
+                                <svg class="social-icon" width="33" height="33">
                                     <use href="../images/symbol-defs.svg#icon-viber"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="store-social-item">
                             <a class="store-social-link" href="">
-                                <svg class="store-play-icon" width="33">
+                                <svg class="social-icon" width="33" height="33">
                                     <use href="../images/symbol-defs.svg#icon-play"></use>
                                 </svg>
                             </a>
@@ -124,6 +188,8 @@
                 </div>
             </div>
         </footer>
+
+    </div>
 </body>
 
 </html>
