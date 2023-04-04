@@ -22,9 +22,8 @@ p {
 
 .cc {
   min-width: 100%;
-  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.333), white),
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.533), white),
     url("../images/cover2.jpg");
-
   background-size: cover;
   position: static;
   background-repeat: no-repeat;
@@ -71,7 +70,23 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 737px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 1000px;
+    min-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
 .header-container {
   display: flex;
   width: 100%;
@@ -85,14 +100,26 @@ p {
   margin-bottom: 50px;
   position: relative;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-container {
+    max-height: 85px;
+    margin-bottom: 0px;
+  }
+}
 .header-nav {
   display: flex;
+
   padding: 0;
   margin: 0;
 
   /* overflow: hidden; */
 }
+/* @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header-container {
+      justify-content: space-between;
+      gap: 10px;
+    }
+  } */
 .header-logo {
   font-family: "Tilt Neon";
   text-align: center;
@@ -106,13 +133,20 @@ p {
   margin: 7px auto 7px 7px;
   border-radius: 10px;
   border: 4px solid white;
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-logo {
+    min-width: 210px;
+    margin-right: 20px;
+  }
 }
 .header-logo:hover,
 .header-logo:focus,
 .header-logo:active {
   background-color: rgb(255, 174, 0);
-  border-color: rgb(248, 247, 238);
+  border-color: rgb(231, 211, 211);
 }
 
 .button-menu:hover,
@@ -134,11 +168,14 @@ p {
 .menu-container {
   font-size: 22px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
+  /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.533), white),
+    url("../images/feedback.jpg"); */
+  background-size: cover;
   border-bottom-right-radius: 16px;
   border-top-left-radius: 8px;
   border-right: 1px solid yellow;
-  padding: 10;
+  padding: 25px 30px;
 
   display: block;
   position: absolute;
@@ -195,21 +232,40 @@ p {
     display: none;
   }
 }
+.menu-desktop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  outline: 1px solid red;
+}
 .header-ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
+  gap: 28px;
   border: 2px solid red;
   padding: 0;
   margin: 22px;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 2px solid red;
+    padding: 0px;
+    margin: 22px 0px;
+  }
+}
 @media screen and (max-width: 767px) {
   .header-ul {
     display: block;
     text-align: left;
-    margin: 15 15 5 15;
+    margin: 0px;
+    margin-bottom: 50px;
     padding: 0;
   }
 }
@@ -221,6 +277,12 @@ p {
   color: #000;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-item {
+    font-size: 19px;
+    padding-bottom: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .header-item {
@@ -240,6 +302,18 @@ p {
   top: -23px;
   left: 0;
 }
+@media screen and (max-width: 767px) {
+  .header-item.active::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(113, 152, 224);
+    position: absolute;
+    top: 11px;
+    left: 175px;
+  }
+}
 .header-ul > .header-item.active:active {
   color: #fff;
 }
@@ -253,17 +327,25 @@ p {
   padding: 0;
   width: 270px;
   font-size: 20px;
-  margin: 22 10 22 auto;
+  margin: 22px 10px 22px auto;
   border: 1px solid red;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0px;
+    max-width: 130px;
+    margin: auto 0px auto 15px;
+  }
 }
 @media screen and (max-width: 767px) {
   .address {
     display: block;
-
+    width: 100%;
     text-align: left;
-    margin-left: 22px;
-    margin: 12;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -279,6 +361,12 @@ p {
   font-size: 16px;
   color: rgb(47, 8, 153);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-mail,
+  .address-tel {
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .address-mail,
   .address-tel {
@@ -290,17 +378,7 @@ p {
 .address-tel:is(:hover, :focus) {
   color: rgb(113, 96, 173);
 }
-.menu-desktop {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
 
-@media screen and (min-width: 768px) {
-  .menu-desktop {
-    display: flex;
-  }
-}
 @media screen and (max-width: 767px) {
   .menu-desktop {
     display: none;
@@ -312,7 +390,7 @@ p {
   font-weight: 900;
   font-size: 27px;
   letter-spacing: 0.15rem;
-  color: rgb(255, 255, 255);
+  color: rgb(37, 8, 117);
   display: block;
   margin: 30px auto 10px 10px;
   padding: 0 auto 0;
@@ -378,16 +456,22 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  outline: 1px solid red;
 }
-
+@media screen and (max-width: 767px) {
+  .global-container {
+    width: 100%;
+    display: block;
+    outline: 1px solid red;
+  }
+}
 .product-title {
   font-family: "Sofia Sans Condensed", sans-serif;
   font-weight: 900;
   font-size: 27px;
   display: block;
   margin: 0px auto 30px;
-  padding: 0 auto 0;
+  padding: 0px auto 0px;
   align-self: center;
 }
 @media screen and (max-width: 767px) {
@@ -439,7 +523,7 @@ p {
   box-shadow: 0px 0px 5px 1px white;
 }
 
-.portfolio-list {
+.product-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -449,7 +533,7 @@ p {
   padding: 0;
   border: 1px solid yellow;
 }
-.portfolio-item {
+.product-item {
   border: 1px solid #e7e9fc;
   display: flex;
   flex-direction: column;
@@ -461,14 +545,14 @@ p {
   padding-bottom: 20px;
 }
 
-.portfolio-item:nth-child(3n + 3) {
+.product-item:nth-child(3n + 3) {
   margin-right: 0px;
 }
-.portfolio-item:nth-last-child(-n + 3) {
+.product-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
 
-.portfolio-subtitle {
+.product-subtitle {
   font-family: "Sofia Sans Condensed", sans-serif;
   font-weight: 900;
   font-size: 27px;
@@ -479,7 +563,7 @@ p {
   padding: 0;
   margin: 28px auto 0.5rem 16px;
 }
-.portfolio-desc {
+.product-desc {
   font-family: "Sofia Sans Condensed", sans-serif;
   font-size: 19px;
   color: grey;
@@ -563,7 +647,7 @@ p {
   font-family: "Sofia Sans Condensed", sans-serif;
   font-weight: 800;
   font-size: 15px;
-  color: rgb(77, 22, 139);
+  color: rgb(0, 0, 0);
   line-height: 1.5;
   letter-spacing: 0.02em;
 
@@ -572,9 +656,10 @@ p {
 }
 @media screen and (max-width: 767px) {
   .social-desc {
+    margin-bottom: 10px;
     text-align: center;
   }
-  .store-social-links {
+  .store-social-link {
     display: block;
     align-self: center;
   }
@@ -582,19 +667,20 @@ p {
 .store-social-list {
   display: flex;
   gap: 10px;
-  margin: 0;
+  margin: 0px;
   /* border: 3px red solid; */
-  padding: 0;
+  padding: 0px;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 400px) {
   .store-social-list {
-    justify-content: center;
+    width: 225px;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 }
 .store-social-item {
   display: block;
-
   width: 50px;
   height: 50px;
   transition: color 0.3s linear;
@@ -623,27 +709,49 @@ p {
   fill: rgb(2, 2, 71);
 }
 /* --                             about us                       --   */
-.aboutus-desc {
-  width: 800px;
-  font-family: "Sofia Sans Condensed", sans-serif;
-  font-size: 22px;
-  color: black;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  max-width: 600;
-  margin: 0 10 0 0;
-}
-.img-about {
-  display: block;
-  margin: 50 50 0 100;
-  border-radius: 10px;
-}
 .aboutus-sec {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 600;
+  min-height: 600px;
 }
+.aboutus-desc {
+  width: 800px;
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: black;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 600px;
+  margin: 0px 10px 0px 0px;
+}
+
+.img-about {
+  display: block;
+  width: 500px;
+  margin: 50px 50px 0px 100px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 767px) {
+  .img-about {
+    border-radius: 5px;
+    margin: 0px;
+    width: 98%;
+  }
+  .aboutus-sec {
+    display: block;
+    margin: 5px;
+    text-align: justify;
+    width: 100%;
+  }
+  .aboutus-desc {
+    font-size: 20px;
+    width: 95%;
+    margin-top: 15px;
+  }
+}
+
 /* CONTACTS ------------------------------------ */
 .contacts-sec {
   display: block;
@@ -785,6 +893,14 @@ p {
   display: flex;
   margin: 50px 55px 50px;
 }
+@media screen and (max-width: 767px) {
+  .cheese-item {
+    display: block;
+    align-items: center;
+    margin: 0px;
+    padding: 25px 5px 30px 5px;
+  }
+}
 .button-list-ci {
   display: flex;
   flex-direction: row;
@@ -792,6 +908,13 @@ p {
   padding: 0px;
   gap: 10px;
   margin: 110px auto 0px;
+}
+@media screen and (max-width: 767px) {
+  .button-list-ci {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 5px 0px;
+  }
 }
 .button-guide {
   background-color: rgb(255, 255, 255);
@@ -812,7 +935,16 @@ p {
 .cheese-img:hover {
   transform: scale(1.23);
 }
-
+@media screen and (max-width: 767px) {
+  .cheese-img {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(238, 136, 48);
+    border-radius: 25px;
+  }
+}
 .cheese-box {
   display: flex;
 
@@ -821,6 +953,11 @@ p {
   flex-wrap: wrap;
   margin: 0px auto 0px 55px;
   /* border: 1px solid sandybrown; */
+}
+@media screen and (max-width: 767px) {
+  .cheese-box {
+    margin: 0px auto 0px;
+  }
 }
 .cheese-subtitle {
   font-family: "Sofia Sans Condensed", sans-serif;
