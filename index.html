@@ -29,18 +29,19 @@
                         <a href="./index.html" class="header-logo">CHEESE STORE</a>
 
                         <div class="header-menu">
-                            <button type="button" class="button-menu is-open" aria-expanded="false"
-                                aria-controls="menu-container">
+                            <button type="button" class="button-menu" aria-expanded="false"
+                                aria-controls="menu-container" data-menu-button>
 
                                 <svg class="icon-svg open-menu close-menu" width="38" height="38"
                                     aria-label="menu-changer">
-                                    <use class="icon-cross" href="./images/icons-menu.svg#icon-cross"></use>
                                     <use class="icon-menu" href="./images/icons-menu.svg#icon-menu1"></use>
+                                    <use class="icon-cross" href="./images/icons-menu.svg#icon-cross"></use>
+
 
                                 </svg>
                             </button>
 
-                            <div class="mobile-menu menu-container " id="menu-container">
+                            <div class="mobile-menu menu-container" id="menu-container" data-menu>
 
                                 <div class="navigation">
                                     <ul class="header-ul">
@@ -166,6 +167,7 @@
 
                 <div class="store-social-links">
                     <p class="social-desc">Ми в соцмережах:</p>
+
                     <ul class="store-social-list list">
                         <li class="store-social-item">
                             <a class="store-social-link" href="#">
