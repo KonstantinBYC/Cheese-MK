@@ -220,7 +220,7 @@ p {
 .menu-container {
   font-size: 22px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.99);
   /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.533), white),
     url("../images/feedback.jpg"); */
   background-size: cover;
@@ -320,11 +320,13 @@ p {
   fill: white;
   -webkit-text-stroke: none;
   align-items: center;
-  padding-right: 0px;
+  padding: 0px;
   margin: 0px;
   width: 40px;
 }
-
+/* .icon-cross {
+  padding-right: 12px;
+} */
 .menu-desktop {
   display: flex;
   justify-content: space-between;
@@ -787,11 +789,10 @@ p {
   justify-content: center;
   align-items: center;
   min-width: 100px;
-  gap: 15px;
+  gap: 7px;
   flex-wrap: nowrap;
   padding: 0px;
   margin: 0px;
-  /* outline: 1px red solid; */
 }
 .social-desc {
   font-family: "Sofia Sans Condensed", sans-serif;
@@ -800,10 +801,29 @@ p {
   color: rgb(0, 0, 0);
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  text-align: right;
   display: block;
+  text-align: right;
 }
+@media screen and (max-width: 350px) {
+  .footer-social-list {
+    width: 240px;
+    flex-wrap: wrap;
+  }
+  .social-desc {
+    padding-left: 75px;
+    outline: 1px red solid;
+  }
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  transition: background-color 0.3s linear;
+}
+
 @media screen and (max-width: 767px) {
   .social-desc {
     margin-bottom: 7px;
@@ -824,7 +844,7 @@ p {
   display: flex;
   gap: 10px;
   margin: 0px;
-  /* border: 3px red solid; */
+
   padding: 0px;
 }
 
@@ -832,6 +852,12 @@ p {
   .store-social-list {
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+  .store-social-item {
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: color 0.3s linear;
   }
 }
 .store-social-item {
@@ -2071,21 +2097,17 @@ p {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  text-align: left;
   gap: 15px;
 
-  padding: 0;
+  padding: 0px;
   margin: 0px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 999px) {
   .footer-ul {
-    padding: 0px;
-    margin: 0px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer-ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     margin: 0px;
     margin-bottom: 20px;
@@ -2094,9 +2116,11 @@ p {
 }
 
 .footer-item {
+  display: block;
   font-family: "Sofia Sans Condensed", sans-serif;
   font-size: 20px;
   font-weight: 900;
+  text-align: left;
   letter-spacing: 0.02rem;
   color: #000;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -2110,7 +2134,6 @@ p {
 @media screen and (max-width: 767px) {
   .footer-item {
     font-size: 20px;
-    margin-bottom: 30px;
   }
 }
 .menu-footer::before {
@@ -2122,7 +2145,7 @@ p {
   background-color: rgb(250, 146, 9);
   position: absolute;
   top: 10%;
-  left: -90px;
+  left: -20%;
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     rotate 1200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2131,12 +2154,12 @@ p {
   background-color: rgb(255, 255, 255);
   rotate: 180deg;
 }
-@media screen and (min-width: 280px) and (max-width: 1199px) {
+@media screen and (min-width: 280px) and (max-width: 999px) {
   .menu-footer::before {
     left: -15%;
   }
 }
-@media screen and (min-width: 540px) and (max-width: 644px) {
+@media screen and (min-width: 500px) and (max-width: 718px) {
   .menu-footer::before {
     left: -60px;
     height: 75%;
@@ -2151,11 +2174,19 @@ p {
   background-color: rgb(250, 146, 9);
   position: absolute;
   top: 10%;
-  right: -90px;
+  right: -23%;
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     rotate 1200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  .menu-footer::after {
+    right: -43px;
+  }
+  .menu-footer::before {
+    left: -38px;
+  }
+}
+@media screen and (max-width: 999px) {
   .menu-footer::after {
     display: none;
   }
@@ -2168,13 +2199,15 @@ p {
 
 .address-footer {
   display: flex;
+
   flex-wrap: nowrap;
-  gap: 25px;
+  gap: 5px;
   margin: 0px;
   padding: 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address-footer {
+    flex-direction: column;
     gap: 4px;
     margin: auto 0px auto;
   }

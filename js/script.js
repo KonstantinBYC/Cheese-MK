@@ -10,13 +10,13 @@ const views = new Swiper(".our-products__block", {
     clickable: true,
   },
   breakpoints: {
-    375: {
+    280: {
       slidesPerView: 1,
     },
-    768: {
+    530: {
       slidesPerView: 2,
     },
-    886: {
+    780: {
       slidesPerView: 3,
     },
     1200: {
