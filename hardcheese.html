@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -25,40 +26,91 @@
             <div class="container">
                 <div class="header-container">
                     <nav class="header-nav">
-                        <a href="./index.html" class="header-logo">CHEESE STORE</span></a>
-                        <ul class="header-ul">
-                            <li><a class="header-item link active" href="./allproducts.html">Наші вироби</a></li>
-                            <li><a class="header-item link" href="./aboutus.html">Про нас</a></li>
-                            <li><a class="header-item link" href="./feedback.html">Відгуки</a></li>
-                            <li><a class="header-item link" href="./stories.html">Історія сирів</a></li>
-                            <li><a class="header-item link" href="./contacts.html">Контакти</a>
-                        </ul>
-                    </nav>
-                    <address>
-                        <ul class="address">
-                            <li class="address-item"> <a class="address-mail"
-                                    href="mailto:info@gmail.com">info@gmail.com</a>
-                            </li>
-                            <li class="address-item"> <a class="address-tel" href="tel:+380971111111">+38
-                                    (097) 111-11-11</a>
-                            </li>
-                        </ul>
-                    </address>
+                        <a href="./index.html" class="header-logo">CHEESE STORE</a>
 
+                        <div class="header-menu">
+                            <button type="button" class="button-menu" aria-expanded="false"
+                                aria-controls="menu-container" data-menu-button>
+
+                                <svg class="icon-svg open-menu close-menu" width="38" height="38"
+                                    aria-label="menu-changer">
+                                    <use class="icon-menu" href="./images/icons-menu.svg#icon-menu1"></use>
+                                    <use class="icon-cross" href="./images/icons-menu.svg#icon-cross"></use>
+
+
+                                </svg>
+                            </button>
+
+                            <div class="mobile-menu menu-container" id="menu-container" data-menu>
+
+                                <div class="navigation">
+                                    <ul class="header-ul">
+                                        <li><a class="header-item link" href="./allproducts.html">Наші вироби</a></li>
+                                        <li><a class="header-item link" href="./aboutus.html">Про нас</a></li>
+                                        <li><a class="header-item link" href="./feedback.html">Відгуки</a></li>
+
+                                        <li><a class="header-item contacts-head link"
+                                                href="./contacts.html">Контакти</a>
+                                    </ul>
+                                </div>
+                                <div class="address-div">
+                                    <address>
+                                        <ul class="address">
+                                            <li class="address-item"> <a class="address-mail"
+                                                    href="mailto:info@gmail.com">info@gmail.com</a>
+                                            </li>
+                                            <li class="address-item"> <a class="address-tel"
+                                                    href="tel:+380971111111">+38
+                                                    (097) 111-11-11</a>
+                                            </li>
+                                        </ul>
+                                    </address>
+                                </div>
+                                <a class="header-social-link" href="/www.instagram.com" target="_blank">
+                                    <svg class="header-icon" width="40" height="40">
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="menu-desktop">
+
+                                <ul class="header-ul">
+                                    <li><a class="header-item link" href="./allproducts.html">Наші вироби</a></li>
+                                    <li><a class="header-item link" href="./aboutus.html">Про нас</a></li>
+                                    <li><a class="header-item link" href="./feedback.html">Відгуки</a></li>
+
+                                    <li><a class="header-item link" href="./contacts.html">Контакти</a>
+                                </ul>
+
+                                <address>
+                                    <ul class="address">
+                                        <li class="address-item"> <a class="address-mail"
+                                                href="mailto:info@gmail.com">info@gmail.com</a>
+                                        </li>
+                                        <li class="address-item"> <a class="address-tel" href="tel:+380971111111">+38
+                                                (097) 111-11-11</a>
+                                        </li>
+                                    </ul>
+                                </address>
+
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </header>
-
         <main>
             <section class="container">
                 <div class="global-container">
 
                     <h1 class="product-title">Тверді сири</h1>
+
                     <ul class="button-list">
-                        <li><a href="./softcheese.html" class="softcheese-page"><button type="button"
+                        <li><a href="./softcheese.html" class="softcheese-page "><button type="button"
                                     class="button-item">
                                     М'які сири</button></a></li>
-                        <li><a href="./hardcheese.html" class="hardcheese-page"></a><button type="button"
+                        <li><a href="./hardcheese.html" class="hardcheese-page active"></a><button type="button"
                                 class="button-item">Тверді
                                 сири</button></a></li>
                         <li><button type="button" class="button-item"><a href="./bluecheese.html">Блакитні
@@ -68,32 +120,30 @@
                     </ul>
 
 
-                    <ul class="portfolio-list">
+                    <ul class="product-list">
 
-
-
-                        <li class="portfolio-item list">
+                        <li class="product-item list">
                             <a href="./chedder.html" class="chedder-page">
                                 <img src=" ./images/chedder.jpeg" alt="chedder" width="100%">
-                                <h2 class="portfolio-subtitle">ЧЕДДЕР</h2>
-                                <p class="portfolio-desc">Тверді сири</p>
+                                <h2 class="product-subtitle">ЧЕДДЕР</h2>
+                                <p class="product-desc">Тверді сири</p>
                             </a>
                         </li>
 
 
-                        <li class="portfolio-item list">
+                        <li class="product-item list">
                             <a href="./gouda.html" class="gouda-page">
                                 <img src=" ./images/gauda.jpg" alt="Taxi Service" width="100%">
-                                <h2 class="portfolio-subtitle">ГАУДА</h2>
-                                <p class="portfolio-desc">Тверді сири</p>
+                                <h2 class="product-subtitle">ГАУДА</h2>
+                                <p class="product-desc">Тверді сири</p>
                             </a>
                         </li>
 
-                        <li class="portfolio-item list">
+                        <li class="product-item list">
                             <a href="./halumi.html" class="halumi-page">
                                 <img src=" ./images/halumi.jpg" alt="halumi" width="100%">
-                                <h2 class="portfolio-subtitle">ХАЛУМІ</h2>
-                                <p class="portfolio-desc">Тверді сири</p>
+                                <h2 class="product-subtitle">ХАЛУМІ</h2>
+                                <p class="product-desc">Тверді сири</p>
                             </a>
                         </li>
                     </ul>
