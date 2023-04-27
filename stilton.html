@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@100;400;500;700;900&family=Sofia+Sans+Condensed&family=Tilt+Neon&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -48,38 +50,44 @@
                 </div>
             </div>
         </header>
+
+
         <main>
-            <section class="portfolio container">
+            <section class="container">
                 <div class="global-container">
 
-
                     <ul class="button-list-ci">
-                        <li><button type="button" class="button-item button-guide"><a href="./gauda.html"
-                                    class="gauda-page"><img src="./images/ch-pointer.png" class="ch-point-prev"
+                        <li><button type="button" class="button-item button-guide"><a href="./mascarpone.html"
+                                    class="chedder-page"><img src="./images/ch-pointer.png" class="ch-point-prev"
                                         alt="ch-pointer" width="55">
                                     Попередній</a></button></li>
-                        <li><button type="button" class="button-item">
-                                <a href="./softcheese.html" class="softcheese-page">
-                                    М'які сири</a>
-                            </button></li>
-                        <li><button type="button" class="button-item"><a href="./hardcheese.html"
-                                    class="hardcheese-page">Тверді
-                                    сири</a></button></li>
-                        <li><button type="button" class="button-item"><a href="./bluecheese.html">Блакитні
-                                    сири</a></button></li>
 
 
-                        <li><button type="button" class="button-item button-guide"><a href="./mascarpone.html"
-                                    class="mascarpone-page">
+                        <li><button type="button" class="button-item button-guide"><a href="./apricot.html"
+                                    class="caciotta-page">
                                     Наступний<img src="./images/ch-pointer.png" class="ch-point-next" alt="ch-pointer"
                                         width="55"></a></button></li>
 
                     </ul>
 
-
                     <div class="cheese-item list">
-                        <img class="cheese-img" src="./images/dorblu.jpg" alt="stilton">
+                        <section id="products" class="section_chesse-products">
+                            <div class="chesse-products_container container">
+                                <div class="chesse-products_block">
+                                    <ul class="chesse-products-list list swiper-wrapper">
+                                        <li class="chesse-item-img  swiper-slide">
+                                            <img class="cheese-img" src="./images/dorblu.jpg" alt="chedder">
+                                        </li>
 
+                                        <li class="chesse-item-img  swiper-slide">
+                                            <img class="cheese-img" src="./images/stilton.png" alt="chedder">
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="chesse_products_swiper-pagination"></div>
+                            </div>
+                        </section>
                         <div class="cheese-box">
                             <h2 class="cheese-subtitle">СТІЛТОН</h2>
                             <p class="cheese-sort">Блакитні сири</p>
@@ -113,7 +121,10 @@
                                 <div class="price">450</div>
                                 <div class="price">грн/кг</div>
                             </div>
+
+
                             <button type="button" class="button-buy">Купити</button>
+
                         </div>
                     </div>
                 </div>
@@ -183,6 +194,13 @@
             </div>
         </footer>
     </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer type="module" src="./js/mobile-menu.js"></script>
+    <script defer type="module" src="./js/modal.js"></script>
+    <script defer type="module" src="./js/script-ch.js"></script>
 </body>
 
 

@@ -1,4 +1,6 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
+
 
 <head>
     <meta charset="UTF-8">
@@ -244,15 +246,6 @@
                                     class="halumi-page"><img src="./images/ch-pointer.png" class="ch-point-prev"
                                         alt="ch-pointer" width="55">
                                     Попередній</a></button></li>
-                        <li><button type="button" class="button-item">
-                                <a href="./softcheese.html" class="softcheese-page">
-                                    М'які сири</a>
-                            </button></li>
-                        <li><button type="button" class="button-item"><a href="./hardcheese.html"
-                                    class="hardcheese-page">Тверді
-                                    сири</a></button></li>
-                        <li><button type="button" class="button-item"><a href="./bluecheese.html">Блакитні
-                                    сири</a></button></li>
 
 
                         <li><button type="button" class="button-item button-guide"><a href="./gauda.html"
@@ -273,10 +266,10 @@
                                             <img class="cheese-img" src="./images/chedder.jpg" alt="chedder">
                                         </li>
                                         <li class="chesse-item-img  swiper-slide">
-                                            <img class="cheese-img" src="./images/emmental.jpg" alt="chedder">
+                                            <img class="cheese-img" src="./images/chedder1.jpg" alt="chedder">
                                         </li>
                                         <li class="chesse-item-img  swiper-slide">
-                                            <img class="cheese-img" src="./images/halumi.jpg" alt="chedder">
+                                            <img class="cheese-img" src="./images/caciotta.jpg" alt="chedder">
                                         </li>
 
                                     </ul>
@@ -432,14 +425,16 @@
                                 <label for="email" class="order-email order-form-label">
                                     <span>E-mail</span>
                                 </label>
-                                <div class="order-form-control">
-                                    <input id="email" type="email" name="email" class="order-form-input"
-                                        placeholder="Введіть ваш email"
+                                <div class="order-form-control order-contacts-form">
+                                    <input id="email" type="email" name="email"
+                                        class="order-form-input modal-order-email" placeholder="Введіть ваш email"
                                         pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}" required
                                         minlength="8" maxlength="50" />
-                                    <svg class="modal-order-email-icon" width="24" height="24">
-                                        <use href="./images/symbol-defs.svg#icon-cart"></use>
+
+                                    <svg class="modal-order-email-icon modal-icon" width="20" height="20">
+                                        <use href="./images/symbol-defs.svg#icon-email"></use>
                                     </svg>
+
                                 </div>
                             </div>
 
@@ -447,15 +442,15 @@
                                 <label for="phone" class="order-phone order-form-label">
                                     <span>Номер телефона</span>
                                 </label>
-                                <div class="order-form-control">
+                                <div class="order-form-control order-contacts-form">
                                     <input id="phone" type="tel" name="phone" class="order-form-input modal-order-tel"
                                         pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="Номер телефона" required
                                         maxlength="9" />
                                     <span class="modal-order-icon-position">
-                                        <svg class="modal-order-tel-icon" width="24" height="24">
-                                            <use href="./images/symbol-defs.svg#icon-cart"></use>
+                                        <svg class="modal-order-tel-icon modal-icon" width="15px" height="15px">
+                                            <use href="./images/symbol-defs.svg#icon-tel"></use>
                                         </svg>
-                                        +380
+                                        + 380
                                     </span>
                                 </div>
                             </div>
@@ -464,12 +459,25 @@
                                 <label for="card" class="order-card order-form-label list">
                                     <span>Номер карти</span>
                                 </label>
-                                <div class="order-form-control order-card-form">
+                                <div class="order-form-control order-contacts-form order-card-form">
                                     <input id="card" type="tel" name="card" class="order-form-input"
                                         placeholder="Введіть номер карти" required minlength="16" maxlength="19" />
-                                    <svg class="form-icon" width="32px" height="18px">
-                                        <use href="./images/symbol-defs.svg#icon-cart"></use>
+                                    <svg class="form-icon modal-icon" width="40px" height="22px">
+                                        <use href="./images/symbol-defs.svg#icon-card"></use>
                                     </svg>
+                                </div>
+                                <div class="order-form-group">
+                                    <label for="username" class="order-form-username order-form-label">
+                                        <span>Валідація картки:</span>
+                                    </label>
+                                    <label for="surname" class="order-form-surname order-form-label">
+                                    </label>
+                                    <div class="order-form-control order-contacts-form">
+                                        <input id="username" type="text" name="valid" class="order-form-input"
+                                            placeholder="Чинна до:" required maxlength="7" minlength="5" />
+                                        <input id="surname" type="number" name="code" class="order-form-input"
+                                            placeholder="CVC код:" required maxlength="3" minlength="3" />
+                                    </div>
                                 </div>
                             </div>
 
@@ -486,8 +494,6 @@
                 </div>
             </div>
         </main>
-
-
 
     </div>
     <!--                        FOOTER                -->
@@ -626,9 +632,8 @@
 
                     <img src="./images/ua-flag.png" class="ua-icon" alt="ua-flag" width="25">
                 </a>
-
-                <p class="footer-desc">Best cheese of Ukraine!</p>
-                <p class="footer-desc">All rights reserved. &#169;</p>
+                <p class="footer-desc">Зроблено з любов'ю!</p>
+                <p class="footer-desc">Усі права захищені. &#169;</p>
             </div>
 
             <div class="menu-footer">
