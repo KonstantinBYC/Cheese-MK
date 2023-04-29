@@ -3,10 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cheese Store</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraft Cheese</title>
+
+    <!-- FAVIVCON -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+    <link rel="manifest" href="./public/site.webmanifest">
+    <link rel="mask-icon" href="./public/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 
@@ -84,10 +96,16 @@
                                     <li><a class="header-item link" href="./aboutus.html">Про нас</a></li>
                                     <li><a class="header-item link" href="./feedback.html">Відгуки</a></li>
 
-                                    <li><a class="header-item link" href="./contacts.html">Контакти</a>
-
+                                    <li><a class="header-item header-contact-item link"
+                                            href="./contacts.html">Контакти</a>
                                 </ul>
-
+                                <div class="scroll-down-cont">
+                                    <a class="scroll-down-button" href="#footer">
+                                        <svg class="icon-scroll-down" width="27" height="27">
+                                            <use href="./images/symbol-defs.svg#icon-scroll-down"></use>
+                                        </svg>
+                                    </a>
+                                </div>
                                 <address>
                                     <ul class="address">
                                         <li class="address-item"> <a class="address-mail"
@@ -156,7 +174,7 @@
                         Ми віримо, що наша любов до справи подолає всі труднощі на нашому шляху.
 
                     </p>
-                    <img class="img-home second-img-home" src="../images/che.jpg.jpg" alt="cheese" width="350">
+                    <img class="img-home second-img-home" src="./images/chesse-bg2.jpg" alt="cheese" width="350">
                     <p class="home-desc">
                         <span class="span-title">НАША ІСТОРІЯ</span><br>
                         Якщо Ви потрапили на цю сторінку, це означає, що Вам цікаво дізнатися про наш шлях розвитку…
@@ -180,7 +198,7 @@
         </main>
 
         <!--                        FOOTER                -->
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="footer-container container">
                 <div class="footer-main">
                     <a href="./index.html" class="footer-logo ">
@@ -241,8 +259,9 @@
                                 </svg>
                             </a>
                         </li>
+                        <!--  href="https://www.facebook.com/profile.php?id=100079066415832"  380963799208-->
                         <li class="footer-social-item">
-                            <a class="footer-social-link" href="https://www.facebook.com/" target="_blank"
+                            <a class="footer-social-link" href="https://www.facebook.com" target="_blank"
                                 rel="noreferrer noopener">
                                 <svg class="social-icon" width="35" height="35">
                                     <use href="./images/symbol-defs.svg#icon-facebook2"></use>
@@ -250,7 +269,7 @@
                             </a>
                         </li>
                         <li class="footer-social-item">
-                            <a class="footer-social-link" href="https://web.telegram.org/k/" target="_blank"
+                            <a class="footer-social-link" href="https://web.telegram.org/k/#-1187778191" target="_blank"
                                 rel="noreferrer noopener">
                                 <svg class="social-icon" width="35" height="35">
                                     <use href="./images/symbol-defs.svg#icon-telegram"></use>
