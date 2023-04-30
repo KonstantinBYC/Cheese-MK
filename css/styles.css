@@ -931,7 +931,7 @@ p {
 }
 @media screen and (max-width: 420px) {
   .footer-social-list {
-    width: 240px;
+    min-width: 240px;
     flex-wrap: wrap;
   }
   .social-desc {
