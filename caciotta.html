@@ -173,7 +173,8 @@
 
                                 <div class="navigation">
                                     <ul class="header-ul">
-                                        <li><a class="header-item link" href="./allproducts.html">Наші вироби</a></li>
+                                        <li><a class="header-item active link" href="./allproducts.html">Наші вироби</a>
+                                        </li>
                                         <li><a class="header-item link" href="./aboutus.html">Про нас</a></li>
                                         <li><a class="header-item link" href="./feedback.html">Відгуки</a></li>
 
@@ -205,14 +206,21 @@
                             <div class="menu-desktop">
 
                                 <ul class="header-ul">
-                                    <li><a class="header-item link" href="./allproducts.html">Наші вироби</a></li>
+                                    <li><a class="header-item active link" href="./allproducts.html">Наші вироби</a>
+                                    </li>
                                     <li><a class="header-item link" href="./aboutus.html">Про нас</a></li>
                                     <li><a class="header-item link" href="./feedback.html">Відгуки</a></li>
 
-                                    <li><a class="header-item link" href="./contacts.html">Контакти</a>
-
+                                    <li><a class="header-item header-contact-item link"
+                                            href="./contacts.html">Контакти</a>
                                 </ul>
-
+                                <div class="scroll-down-cont">
+                                    <a class="scroll-down-button" href="#footer">
+                                        <svg class="icon-scroll-down" width="27" height="27">
+                                            <use href="./images/symbol-defs.svg#icon-scroll-down"></use>
+                                        </svg>
+                                    </a>
+                                </div>
                                 <address>
                                     <ul class="address">
                                         <li class="address-item"> <a class="address-mail"
@@ -417,61 +425,98 @@
             </div>
         </main>
 
-
-        <footer class="footer">
+        <!--                        FOOTER                -->
+        <footer class="footer" id="footer">
             <div class="footer-container container">
                 <div class="footer-main">
-                    <a href="./index.html" class="footer-logo">CHEESE STORE<img src="./images/ua-flag.png"
-                            class="ua-icon" alt="ua-flag" width="25">
+                    <a href="./index.html" class="footer-logo ">
+                        <svg class="logo-icon kclogo-footer">
+                            <use href="./images/icons-menu.svg#icon-logo-main"></use>
+                        </svg>
+
+
+
+                        <img src="./images/ua-flag.png" class="ua-icon" alt="ua-flag" width="25">
                     </a>
 
-                    <p class="footer-desc">Best cheese of Ukraine!</p>
+                    <p class="footer-desc">Зроблено з любов'ю!</p>
+                    <p class="footer-priv">Усі права захищені. &#169;</p>
                 </div>
 
+                <div class="menu-footer">
+                    <ul class="footer-ul">
+                        <li><a class="footer-item link" href="./allproducts.html">Наші вироби</a></li>
+                        <li><a class="footer-item link" href="./aboutus.html">Про нас</a></li>
+                        <li><a class="footer-item link" href="./feedback.html">Відгуки</a></li>
+                        <li><a class="footer-item link" href="./contacts.html">Контакти</a>
 
-                <div class="store-social-links">
-                    <ul class="store-social-list list">
-                        <li class="store-social-item">
-                            <a class="store-social-link" href="">
-                                <svg class="social-icon" width="30">
-                                    <use href="../images/symbol-defs.svg#icon-instagram"></use>
+                    </ul>
+
+                    <address>
+                        <ul class="address-footer">
+                            <li class="address-footer-item"> <a class="address-footer-mail"
+                                    href="mailto:cheese@gmail.com">cheese@gmail.com</a>
+                            </li>
+                            <li class="address-footer-item"> <a class="address-footer-tel" href="tel:+380971111111">+38
+                                    (097) 111-11-11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="footer-social-links">
+                    <p class="social-desc">Ми в соцмережах:</p>
+
+                    <ul class="footer-social-list list">
+
+                        <li class="footer-social-item">
+                            <a class="footer-social-link"
+                                href="https://www.instagram.com/homemade_cheese_made_by_maria/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="social-icon" width="35" height="35">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
 
-
-                        <li class="store-social-item">
-                            <a class="store-social-link" href="">
-                                <svg class="social-icon" width="30">
-                                    <use href="../images/symbol-defs.svg#icon-twitter"></use>
+                        <li class="footer-social-item">
+                            <a class="footer-social-link" href="https://www.twitter.com/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="social-icon" width="35" height="35">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="store-social-item">
-                            <a class="store-social-link" href="">
-                                <svg class="social-icon" width="30">
-                                    <use href="../images/symbol-defs.svg#icon-facebook2"></use>
+                        <!--  href="https://www.facebook.com/profile.php?id=100079066415832"  380963799208-->
+                        <li class="footer-social-item">
+                            <a class="footer-social-link" href="https://www.facebook.com" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="social-icon" width="35" height="35">
+                                    <use href="./images/symbol-defs.svg#icon-facebook2"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="store-social-item">
-                            <a class="store-social-link" href="">
-                                <svg class="social-icon" width="30">
-                                    <use href="../images/symbol-defs.svg#icon-telegram"></use>
+                        <li class="footer-social-item">
+                            <a class="footer-social-link" href="https://web.telegram.org/k/#-1187778191" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="social-icon" width="35" height="35">
+                                    <use href="./images/symbol-defs.svg#icon-telegram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="store-social-item">
-                            <a class="store-social-link" href="">
-                                <svg class="social-icon" width="33">
-                                    <use href="../images/symbol-defs.svg#icon-viber"></use>
+                        <li class="footer-social-item">
+                            <a class="footer-social-link" href="https://www.viber.com/" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="social-icon" width="35" height="35">
+                                    <use href="./images/symbol-defs.svg#icon-viber"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="store-social-item">
-                            <a class="store-social-link" href="">
-                                <svg class="social-icon" width="33">
-                                    <use href="../images/symbol-defs.svg#icon-play"></use>
+                        <li class="footer-social-item">
+                            <a class="footer-social-link" href="https://www.youtube.com/?hl=uk&gl=UA" target="_blank"
+                                rel="noreferrer noopener">
+                                <svg class="social-icon" width="35" height="35">
+                                    <use href="./images/symbol-defs.svg#icon-play"></use>
                                 </svg>
                             </a>
                         </li>
